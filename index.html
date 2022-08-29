@@ -10,19 +10,26 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/style.min.css" />
 		<script defer src="js/index.js"></script>
 		<title>Frontend Mentor | Advice generator app</title>
 	</head>
 	<body>
 		<div class="advice-container">
-			<span class="advice-number"></span>
-			<p class="advice"></p>
-			<div class="patter-divider">
-				<button>
-					<img src="./images/icon-dice.svg" alt="button icon" />
-				</button>
+			<div class="advice-content">
+				<span class="advice-number">Advice</span>
+				<p class="advice"></p>
 			</div>
+			<div class="patter-divider"></div>
+			<button class="advice-btn">
+				<img class="btn-icon" src="./images/icon-dice.svg" alt="button icon" />
+			</button>
 		</div>
 		<div class="attribution">
 			Challenge by
