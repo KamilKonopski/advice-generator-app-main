@@ -61,6 +61,11 @@ body {
 		height: 2vh;
 		margin-bottom: 50px;
 		width: 90%;
+
+		@media screen and (max-width: 1023px) {
+			background: url("../images/pattern-divider-mobile.svg") no-repeat center;
+			height: 3vh;
+		}
 	}
 
 	.advice-btn {
