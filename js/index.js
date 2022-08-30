@@ -4,11 +4,10 @@ const adviceContent = document.querySelector('.advice-content');
 const adviceNumber = document.querySelector('.advice-number');
 const advice = document.querySelector('.advice');
 
-const addQuote = res => {
-    console.log(res);
+const addQuote = ({slip}) => {
 
-    adviceNumber.innerText = `advice #${res.slip.id}`;
-    advice.innerText = `"${res.slip.advice}"`;
+    adviceNumber.innerText = `advice #${slip.id}`;
+    advice.innerText = `"${slip.advice}"`;
     adviceContent.appendChild(adviceNumber);
     adviceContent.appendChild(advice);
 }
