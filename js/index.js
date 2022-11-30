@@ -4,7 +4,7 @@ const adviceContent = document.querySelector('.advice-content');
 const adviceNumber = document.querySelector('.advice-number');
 const advice = document.querySelector('.advice');
 
-const addQuote = ({slip}) => {
+function addQuote({slip}) {
 
     adviceNumber.innerText = `advice #${slip.id}`;
     advice.innerText = `"${slip.advice}"`;
@@ -12,7 +12,7 @@ const addQuote = ({slip}) => {
     adviceContent.appendChild(advice);
 }
 
-const addAdvice = () => {
+function addAdvice() {
     adviceContent.innerText = "";
 
     fetch(API_URL)
